@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Product Image"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/aname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Person Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/logoImage"
+        app:layout_constraintTop_toTopOf="@+id/logoImage" />
+
+    <TextView
+        android:id="@+id/anumber"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="9dp"
+        android:text="Person Account Number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/adesc"
+        app:layout_constraintStart_toStartOf="@+id/aname"
+        app:layout_constraintTop_toBottomOf="@+id/aname" />
+
+    <TextView
+        android:id="@+id/adesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Short description of the reason goes here."
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/anumber"
+        app:layout_constraintTop_toBottomOf="@+id/anumber" />
+
+    <TextView
+        android:id="@+id/aamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="1200 Rs."
+        android:textColor="@color/theme_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/adesc"
+        app:layout_constraintTop_toBottomOf="@+id/adesc" />
+
+    <TextView
+        android:id="@+id/adate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:text="19/12/2024"
+        android:textColor="@color/theme_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/aamount"
+        app:layout_constraintStart_toEndOf="@+id/aamount"
+        app:layout_constraintTop_toTopOf="@+id/aamount" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

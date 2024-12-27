@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Product Image"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="Person Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/logoImage"
+        app:layout_constraintTop_toTopOf="@+id/logoImage" />
+
+    <TextView
+        android:id="@+id/anumber"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="9dp"
+        android:text="Person Account Number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/adesc"
+        app:layout_constraintStart_toStartOf="@+id/aname"
+        app:layout_constraintTop_toBottomOf="@+id/aname" />
+
+    <TextView
+        android:id="@+id/adesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Short description of the reason goes here."
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/anumber"
+        app:layout_constraintTop_toBottomOf="@+id/anumber" />
+
+    <TextView
+        android:id="@+id/titleamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Donation Amount: "
+        android:textColor="@color/theme_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/adesc"
+        app:layout_constraintTop_toBottomOf="@+id/adesc" />
+
+    <TextView
+        android:id="@+id/titlDonatedeamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Donated Amount: "
+        android:textColor="@color/theme_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/titleamount"
+        app:layout_constraintTop_toBottomOf="@+id/titleamount" />
+
+    <TextView
+        android:id="@+id/adate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="19/12/2024"
+        android:textColor="@color/theme_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/titlDonatedeamount"
+        app:layout_constraintTop_toBottomOf="@+id/titlDonatedeamount" />
+
+    <TextView
+        android:id="@+id/ddamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="100"
+        app:layout_constraintStart_toEndOf="@+id/titleamount"
+        app:layout_constraintTop_toTopOf="@+id/titleamount" />
+
+    <TextView
+        android:id="@+id/ddamount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="100"
+        app:layout_constraintStart_toEndOf="@+id/titlDonatedeamount"
+        app:layout_constraintTop_toTopOf="@+id/titlDonatedeamount" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
